@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  background-color: aquamarine;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(8, 8, 67);
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.navbar .logo {
+  font-size: 18px;
+  color: #fff;
+  display: inline-block;
+  margin-left: 12px;
+}
+
+.navbar .navList ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .navList ul li {
+  list-style: none;
+}
+
+.navbar .navList ul li a {
+  text-decoration: none;
+  font-size: 18px;
+  margin-inline: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.navbar .navList ul li a:hover,
+.navbar .navList li .active {
+  color: greenyellow;
+  border-bottom: 2px solid #ccc;
+}
+
+.navbar .icon {
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+  margin-right: 1.2rem;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .icon:hover {
+  color: greenyellow;
+}
+
+
+
+/* meadia query */
+
+@media only screen and (max-width:600px) {
+  .navbar .navList ul {
+    display: none;
+  }
+
+  .navbar .icon {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .navbar .navList .showData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 78px;
+    right: 0;
+    width: 40%;
+    height: 40vh;
+    background-color: rgb(122, 121, 121);
+    text-align: center;
+    padding: 0px;
+    gap: 25px;
+    border-bottom-left-radius: 15px;
+  }
+}
